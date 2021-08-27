@@ -79,3 +79,11 @@ For the most part, this guide will assume you are on Windows. I have not gone th
     ![includePath](https://i.imgur.com/VuWzSPW.png)
 
     In my case, my network drive is `U:/`, so this is what I had to add to the variable. Simply change it to whatever letter you used and save your changes. You may not make use of these copied files, but what this does is give VS Code a valid path to a copy of these files. This allows Intellisense to detect errors and give predictions on things involving these libraries.
+
+### Closing
+
+There's a couple things worth noting. Firstly, the sidebar with this setup does not really like to dynamically update. You'll be making ample use of that manual refresh button at the top.
+
+Second, if you have any interest in setting up SSH keys for things like Git, you'll want to run `ssh-keygen` on a Tesla machine, mash enter like before, and then retrieve the key from `~/.ssh/id_rsa.pub`. You can add your own key to Git as well if you like, located at `C:/msys64/home/$USERNAME/.ssh/id_rsa.pub`. But it's not necessary for most UTK-related projects.
+
+Finally, use VS Code to its fullest! Look up automatic formatting options, such as `.clang-format` for C/C++ programs. Set up the visual debugger, get themes, make it yours. No point in all this effort if you don't use the new features to their fullest.
