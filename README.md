@@ -24,7 +24,7 @@ For the most part, this guide will assume you are on Windows. I have not gone th
     ![Environment variables example](https://i.imgur.com/AQyW3P1.png)
 3. Press "New" on the left bar. Assuming you installed MSYS in `C:/msys64/`, add the following: `C:\msys64\usr\bin`
 4. If you did the optional step for a compiler, also add `C:\msys64\mingw64\bin`
-5. By default, both of these new additions will appear at the bottom of the list, meaning they have lowest priority. At the very least, we want them to take priority over the default Windows equivalents. Thus, select them and click "Move Up" on the left until they are at the top.
+5. By default, both of these new additions will appear at the bottom of the list, meaning they have lowest priority. At the very least, we want them to take priority over the default Windows equivalents. Thus, select them and click "Move Up" on the right until they are at the top.
 6. Press "OK" on all windows to ensure your changes save.
 7. You may test that these steps worked by opening Powershell and running `get-command ssh`. It should look like the following image - note the source on the right.
 
