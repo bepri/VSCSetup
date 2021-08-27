@@ -14,7 +14,7 @@ For the most part, this guide will assume you are on Windows. I have not gone th
 ### Within MSYS
 1. Run `pacman -S openssh`
 2. Run `ssh-keygen`. It will bring up several prompts, just press enter. Don't type anything.
-3. Run `ssh-copy-id netid@tesla`, making necessary substitutions. For example, my NetID is ipelton and I use tesla1. Thus, I would run `ssh-copy-id ipelton@tesla1.eecs.utk.edu`. When prompted for a password, enter your NetID password.
+3. Run `ssh-copy-id netid@tesla1.eecs.utk.edu`, substituting in your own NetID. The actual server selected doesn't matter, so don't worry about picking a different server from everyone else. Tesla1 is fine.
 4. (Optional) If you want a compiler to do some stuff locally, run `pacman -S mingw-w64-x86_64-gcc`
 
 ### Modifying PATH variables
