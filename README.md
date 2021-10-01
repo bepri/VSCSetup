@@ -13,9 +13,9 @@ For the most part, this guide will assume you are on Windows. I have not gone th
 ## Steps
 ### Within MSYS
 1. Run `pacman -S openssh`
-2. Run `ssh-keygen`. It will bring up several prompts, just press enter. Don't type anything.
+2. Run `ssh-keygen -b 4096`. It will bring up several prompts, press enter for most prompts but add a keyphrase of your choice. You will log in with this password.
 3. Run `ssh-copy-id netid@tesla1.eecs.utk.edu`, substituting in your own NetID. The actual server selected doesn't matter, so don't worry about picking a different server from everyone else. Tesla1 is fine.
-4. (Optional) If you want a compiler to do some stuff locally, run `pacman -S mingw-w64-x86_64-gcc`
+4. (Optional) If you want a compiler to do some stuff locally, run `pacman -S mingw-w64-x86_64-gcc`. Doing this will also fix some false positive warnings.
 
 ### Modifying PATH variables
 1. In the Start Menu, search the word "environment" and press enter. Click the button at the bottom of this window that says "Environment Variables..."
